@@ -1,12 +1,27 @@
 ﻿using System;
+using System.Collections;
 
 namespace ejerciciodecolacon_numeros
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        public static void Main()
         {
-            Console.WriteLine("Hello World!");
+            Double minumero;
+            Queue laCola = new Queue();
+            laCola.Enqueue(1.22);
+            laCola.Enqueue(2.19);
+            laCola.Enqueue(3.78);
+            laCola.Enqueue(4.408);
+            laCola.Enqueue(5.601);
+            for (byte i = 0; i < 5; i++)
+            {
+                minumero = (Double)laCola.Dequeue();
+                Console.WriteLine(minumero);
+                Console.ReadKey();
+
+
+            }
         }
     }
 }
